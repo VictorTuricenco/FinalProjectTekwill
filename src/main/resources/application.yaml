@@ -1,0 +1,16 @@
+spring:
+  sql:
+    init:
+      mode: always
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:file:C:\Users\Welcome\OneDrive\Desktop\FinalProject\src\main\resources\DB_save/final_project_DB
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
